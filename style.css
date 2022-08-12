@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cursed Timer ULiL';
+}
+
+@font-face {
+    font-family: 'Cursed Timer ULiL';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Cursed Timer ULiL'), url('https://fonts.cdnfonts.com/s/40642/CursedTimerUlil-Aznm.woff') format('woff');
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #1B244A;
+    padding: 30px;
+}
+
+h3 {
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.timer, .text-center {
+    text-align: center;
+}
+
+.timer-box {
+    margin: auto;
+}
+
+.box {
+    padding: 10px 20px 0 20px;
+    font-size: 3em;
+    color: rgb(151, 34, 34);
+    background-color: #000;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.scores, .fouls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.scores h3, .fouls h3 {
+    text-align: center;
+}
+
+.increment {
+    font-weight: 600;
+    padding: 8px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0.5em;
+} 
+
+.new-game {
+    text-align: center;
+    font-size: 1.6em;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 20px;
+    margin-top: 0.5em;
+    border-radius: 5px;
+    cursor: pointer;
+}
