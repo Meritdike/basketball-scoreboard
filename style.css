@@ -81,6 +81,10 @@ h3 {
 }
 
 button:hover {
-    background-color: #000;
+    background-color: rgb(87, 83, 83);
     color: #fff;
+}
+
+button:active {
+    background-color: #000;
 }
