@@ -82,6 +82,7 @@ let guestPoint = 0;
 let homeFoul = 0;
 let guestFoul = 0;  
 
+
 // Period Increment
 function addOnePoint() {
     periodCount += 1;
@@ -172,7 +173,8 @@ function winningTeam() {
     }
 }
 
-//NEW GAME
+
+//NEW GAME BUTTON
 function newGame() {
     timer.remainingSeconds = 0;
     stopTimer();
