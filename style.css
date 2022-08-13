@@ -107,3 +107,11 @@ button:active {
     cursor: pointer;
     width: 1em;
 }
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
+}

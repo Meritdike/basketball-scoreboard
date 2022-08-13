@@ -93,28 +93,34 @@ function addOnePoint() {
 function addOneHomePoint() {
     homePoint += 1;
     homeScoreIncrement.textContent = homePoint.toString().padStart(2, '0');
+    winningTeam()
 }
 function addTwoHomePoints() {
     homePoint += 2;
     homeScoreIncrement.textContent = homePoint.toString().padStart(2, '0');
+    winningTeam()
 }
 function addThreeHomePoints() {
     homePoint += 3;
     homeScoreIncrement.textContent = homePoint.toString().padStart(2, '0');
+    winningTeam()
 }
 
 //Guest Points
 function addOneGuestPoint() {
     guestPoint += 1;
     guestScoreIncrement.textContent = guestPoint.toString().padStart(2, '0');
+    winningTeam()
 }
 function addTwoGuestPoints() {
     guestPoint += 2;
     guestScoreIncrement.textContent = guestPoint.toString().padStart(2, '0');
+    winningTeam()
 }
 function addThreeGuestPoints() {
     guestPoint += 3;
     guestScoreIncrement.textContent = guestPoint.toString().padStart(2, '0');
+    winningTeam()
 }
 
 
@@ -145,4 +151,23 @@ function addTwoGuestFoul() {
 function addThreeGuestFoul() {
     guestFoul += 3;
     guestFouls.textContent = guestFoul.toString().padStart(2, '0');
+}
+
+
+// Winning Team
+function winningTeam() {
+    if (homePoint > guestPoint) {
+        homeScoreIncrement.classList.add('green');
+        guestScoreIncrement.classList.remove('green');
+        homeScoreIncrement.classList.remove('blue');
+        guestScoreIncrement.classList.remove('blue');
+    } else if (guestPoint > homePoint) {
+        guestScoreIncrement.classList.add('green');
+        homeScoreIncrement.classList.remove('green');
+        homeScoreIncrement.classList.remove('blue');
+        guestScoreIncrement.classList.remove('blue');
+    } else {
+        homeScoreIncrement.classList.add('blue');
+        guestScoreIncrement.classList.add('blue');
+    }
 }
