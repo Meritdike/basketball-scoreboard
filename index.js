@@ -171,3 +171,25 @@ function winningTeam() {
         guestScoreIncrement.classList.add('blue');
     }
 }
+
+//NEW GAME
+function newGame() {
+    timer.remainingSeconds = 0;
+    stopTimer();
+    updateTimer();
+    periodCount = 0;
+    homePoint = 0;
+    guestPoint = 0;
+    homeFoul = 0;
+    guestFoul = 0;
+    periodIncrement.textContent = periodCount.toString().padStart(2, '0');
+    homeScoreIncrement.textContent = homePoint.toString().padStart(2, '0');
+    guestScoreIncrement.textContent = guestPoint.toString().padStart(2, '0');
+    homeFouls.textContent = homeFoul.toString().padStart(2, '0');
+    guestFouls.textContent = guestFoul.toString().padStart(2, '0');
+    homeScoreIncrement.classList.remove('green');
+    guestScoreIncrement.classList.remove('green');
+    homeScoreIncrement.classList.remove('blue');    
+    guestScoreIncrement.classList.remove('blue');
+
+}
