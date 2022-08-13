@@ -160,16 +160,16 @@ function winningTeam() {
     if (homePoint > guestPoint) {
         homeScoreIncrement.classList.add('green');
         guestScoreIncrement.classList.remove('green');
-        homeScoreIncrement.classList.remove('blue');
-        guestScoreIncrement.classList.remove('blue');
+        homeScoreIncrement.classList.remove('yellow');
+        guestScoreIncrement.classList.remove('yellow');
     } else if (guestPoint > homePoint) {
         guestScoreIncrement.classList.add('green');
         homeScoreIncrement.classList.remove('green');
-        homeScoreIncrement.classList.remove('blue');
-        guestScoreIncrement.classList.remove('blue');
+        homeScoreIncrement.classList.remove('yellow');
+        guestScoreIncrement.classList.remove('yellow');
     } else {
-        homeScoreIncrement.classList.add('blue');
-        guestScoreIncrement.classList.add('blue');
+        homeScoreIncrement.classList.add('yellow');
+        guestScoreIncrement.classList.add('yellow');
     }
 }
 
@@ -191,7 +191,7 @@ function newGame() {
     guestFouls.textContent = guestFoul.toString().padStart(2, '0');
     homeScoreIncrement.classList.remove('green');
     guestScoreIncrement.classList.remove('green');
-    homeScoreIncrement.classList.remove('blue');    
-    guestScoreIncrement.classList.remove('blue');
+    homeScoreIncrement.classList.remove('yellow');    
+    guestScoreIncrement.classList.remove('yellow');
 
 }
