@@ -5,7 +5,7 @@ const control = document.querySelector('.timer-control')
 const reset = document.querySelector('.timer-reset')
 
 timer.interval = null;
-timer.remainingSeconds = 1000;
+timer.remainingSeconds = 0;
 
 updateTimer();
 controlTimer();
@@ -71,3 +71,80 @@ function stopTimer() {
 }
 
 
+//Increment Buttons
+let periodIncrement = document.querySelector('.period-box');
+let homeScoreIncrement = document.querySelector('.home-score');
+let guestScoreIncrement = document.querySelector('.guest-score');
+let homeFouls = document.querySelector('.home-fouls');
+let guestFouls = document.querySelector('.guest-fouls');
+
+let periodCount = 0;
+let homePoint = 0;
+let guestPoint = 0;
+let homeFoul = 0;
+let guestFoul = 0;  
+
+// Period Increment
+function addOnePoint() {
+    periodCount += 1;
+    periodIncrement.textContent = periodCount.toString().padStart(2, '0');
+}
+
+// POINTS
+// Home Points
+function addOneHomePoint() {
+    homePoint += 1;
+    homeScoreIncrement.textContent = homePoint.toString().padStart(2, '0');
+}
+function addTwoHomePoints() {
+    homePoint += 2;
+    homeScoreIncrement.textContent = homePoint.toString().padStart(2, '0');
+}
+function addThreeHomePoints() {
+    homePoint += 3;
+    homeScoreIncrement.textContent = homePoint.toString().padStart(2, '0');
+}
+
+//Guest Points
+function addOneGuestPoint() {
+    guestPoint += 1;
+    guestScoreIncrement.textContent = guestPoint.toString().padStart(2, '0');
+}
+function addTwoGuestPoints() {
+    guestPoint += 2;
+    guestScoreIncrement.textContent = guestPoint.toString().padStart(2, '0');
+}
+function addThreeGuestPoints() {
+    guestPoint += 3;
+    guestScoreIncrement.textContent = guestPoint.toString().padStart(2, '0');
+}
+
+
+// FOULS
+// Home Fouls
+function addOneHomeFoul() {
+    homeFoul += 1;
+    homeFouls.textContent = homeFoul.toString().padStart(2, '0');
+}
+function addTwoHomeFoul() {
+    homeFoul += 2;
+    homeFouls.textContent = homeFoul.toString().padStart(2, '0');
+}
+function addThreeHomeFoul() {
+    homeFoul += 3;
+    homeFouls.textContent = homeFoul.toString().padStart(2, '0');
+}
+
+// Guest Fouls
+function addOneGuestFoul() {
+    guestFoul += 1;
+    guestFouls.textContent = guestFoul.toString().padStart(2, '0');
+}
+function addTwoGuestFoul() {
+    guestFoul += 2;
+    guestFouls.textContent = guestFoul.toString().padStart(2, '0');
+}
+function addThreeGuestFoul() {
+    guestFoul += 3;
+    guestFouls.textContent = guestFoul.toString().padStart(2, '0');
+}

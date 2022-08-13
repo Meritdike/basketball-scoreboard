@@ -24,7 +24,6 @@
                     <span class="timer-btn">
                         <button class="timer-control">
                             <i class="fa-solid fa-play"></i>
-                            <!-- <i class="fa-solid fa-pause"></i> -->
                         </button>
                         <button type="button" class="timer-reset">
                             <i class="fa-solid fa-stopwatch"></i>
@@ -35,47 +34,47 @@
             <div class="scores">
                 <div class="score">
                     <h3>HOME</h3>
-                    <div class="score-box box">00</div>
+                    <div class="home-score box">00</div>
                     <div class="text-center">
-                        <button class="increment">+1</button>
-                        <button class="increment">+2</button>
-                        <button class="increment">+3</button>
+                        <button class="increment" onclick="addOneHomePoint()">+1</button>
+                        <button class="increment" onclick="addTwoHomePoints()">+2</button>
+                        <button class="increment" onclick="addThreeHomePoints()">+3</button>
                     </div>
                 </div>
                 <div class="score">
                     <h3>GUEST</h3>
-                    <div class="score-box box">00</div>
+                    <div class="guest-score box">00</div>
                     <div class="text-center">
-                        <button class="increment">+1</button>
-                        <button class="increment">+2</button>
-                        <button class="increment">+3</button>
+                        <button class="increment" onclick="addOneGuestPoint()">+1</button>
+                        <button class="increment" onclick="addTwoGuestPoints()">+2</button>
+                        <button class="increment" onclick="addThreeGuestPoints()">+3</button>
                     </div>
                 </div>
             </div>
             <div class="fouls">
                 <div class="foul">
                     <h3>FOUL</h3>
-                    <div class="score-box box">00</div>
+                    <div class="home-fouls box">00</div>
                     <div class="text-center">
-                        <button class="increment">+1</button>
-                        <button class="increment">+2</button>
-                        <button class="increment">+3</button>
+                        <button class="increment" onclick="addOneHomeFoul()">+1</button>
+                        <button class="increment" onclick="addTwoHomeFoul()">+2</button>
+                        <button class="increment" onclick="addThreeHomeFoul()">+3</button>
                     </div>
                 </div>
                 <div class="period">
                     <h3>PERIOD</h3>
                     <div class="period-box box">00</div>
                     <div class="text-center">
-                        <button class="increment">+1</button>
+                        <button class="increment" onclick="addOnePoint()">+1</button>
                     </div>
                 </div>
                 <div class="foul">
                     <h3>FOUL</h3>
-                    <div class="score-box box">00</div>
+                    <div class="guest-fouls box">00</div>
                     <div class="text-center">
-                        <button class="increment">+1</button>
-                        <button class="increment">+2</button>
-                        <button class="increment">+3</button>
+                        <button class="increment" onclick="addOneGuestFoul()">+1</button>
+                        <button class="increment" onclick="addTwoGuestFoul()">+2</button>
+                        <button class="increment" onclick="addThreeGuestFoul()">+3</button>
                     </div>
                 </div>
             </div>
