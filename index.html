@@ -15,9 +15,22 @@
 <body>
     <section>
         <div class="container">
-            <div class="timer">
+            <div id="timer">
                 <h3>TIMER</h3>
-                <div class="timer-box box">00:00</div>
+                <div class="timer-box box">
+                    <span class="timer-minute">00</span>
+                    <span class="timer-colon">:</span>
+                    <span class="timer-seconds">00</span>
+                    <span class="timer-btn">
+                        <button class="timer-control">
+                            <i class="fa-solid fa-play"></i>
+                            <!-- <i class="fa-solid fa-pause"></i> -->
+                        </button>
+                        <button type="button" class="timer-reset">
+                            <i class="fa-solid fa-stopwatch"></i>
+                        </button>
+                    </span>
+                </div>
             </div>
             <div class="scores">
                 <div class="score">
@@ -72,6 +85,9 @@
         </div>
     </section>
 
+
+    <!-- Font Awesome script  -->
+    <script src="https://kit.fontawesome.com/e774502dc0.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </body>
 </html>

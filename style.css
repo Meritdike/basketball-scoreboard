@@ -20,7 +20,7 @@ section {
 }
 
 .container {
-    width: 50%;
+    width: 56%;
     margin: 0 auto;
     background-color: #1B244A;
     padding: 30px;
@@ -29,9 +29,10 @@ section {
 h3 {
     font-size: 2em;
     font-family: 'Poppins', sans-serif;
+    color: #cccccc;
 }
 
-.timer, .text-center {
+#timer, .text-center {
     text-align: center;
 }
 
@@ -64,10 +65,12 @@ h3 {
 .increment {
     font-weight: 600;
     padding: 8px;
-    border: 1px solid #000;
+    border: 1px solid #9AABD8;
+    color: #9AABD8;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 0.5em;
+    background-color: transparent;
 } 
 
 .new-game {
@@ -78,13 +81,29 @@ h3 {
     margin-top: 0.5em;
     border-radius: 5px;
     cursor: pointer;
+    color: #9AABD8;
+}
+
+.new-game button {
+    background-color: transparent;
+    border: 1px solid #9AABD8;
 }
 
 button:hover {
+    border: 1px solid rgb(87, 83, 83);
     background-color: rgb(87, 83, 83);
     color: #fff;
 }
 
 button:active {
     background-color: #000;
+    border: 1px solid #000;
+}
+
+.timer-btn button {
+    background-color: transparent;
+    color: rgb(151, 34, 34);
+    border: none;
+    cursor: pointer;
+    width: 1em;
 }
