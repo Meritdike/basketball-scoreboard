@@ -1,3 +1,4 @@
+// GAME TIMER
 const timer = document.getElementById('timer');
 const minutes = document.querySelector('.timer-minute')
 const seconds = document.querySelector('.timer-seconds')
@@ -7,11 +8,7 @@ const reset = document.querySelector('.timer-reset')
 timer.interval = null;
 timer.remainingSeconds = 0;
 
-updateTimer();
-controlTimer();
-startTimer();
-stopTimer();
-
+// Control button
 control.addEventListener('click', () => {
     if (timer.interval === null) {
         startTimer();
@@ -20,6 +17,7 @@ control.addEventListener('click', () => {
     }
 });
 
+// Update button
 reset.addEventListener('click', () => {
     let inputMinute = prompt('Enter the number of minutes less than 60');
 
